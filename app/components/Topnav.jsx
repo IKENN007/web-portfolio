@@ -32,28 +32,28 @@ const Topnav = () => {
                         text-secondaryColor font-semibold 
                         hover:border-customYellow 
                         hover:text-customYellow
-                        duration-500'>
+                        duration-300'>
                             Home
                         </li>
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
                         text-secondaryColor font-semibold 
                         hover:border-customYellow
                         hover:text-customYellow
-                        duration-500'>
+                        duration-300'>
                             About
                         </li>
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
                         text-secondaryColor font-semibold 
                         hover:border-customYellow 
                         hover:text-customYellow 
-                        duration-500'>
+                        duration-300'>
                             Portfolio
                         </li>
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
                         text-secondaryColor font-semibold 
                         hover:border-customYellow 
                         hover:text-customYellow 
-                        duration-500'>
+                        duration-300'>
                             Contact
                         </li>
                     </ul>
@@ -73,7 +73,7 @@ const Topnav = () => {
 
             <div id="dropdownDelay"
             className={`${showDropdown ? '' : 'hidden'} 
-            absolute bg-white backdrop-blur-sm bg-opacity-30 w-screen z-10 rounded-lg shadow mt-14
+            absolute bg-white backdrop-blur-sm bg-opacity-30 z-10 rounded-lg w-full shadow mt-20
             md:hidden`}>
                 <ul aria-labelledby="trigger-dropdown">
                     <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
