@@ -10,9 +10,10 @@ const Hero = () => {
                 lg:w-2/4 
                 md:w-3/4">
                     <div>
-                        <div className="">
+                        <div>
                             <span className="text-sm font-semibold uppercase">Hello!</span>
                         </div>
+
                         <div className="mb-6 mt-4">
                             <span className="font-extrabold 
                             lg:text-6xl 
@@ -21,9 +22,17 @@ const Hero = () => {
                             I'm<span className=" text-customYellow"> Jon Kenneth <br/> Alderite</span>
                             </span>
                         </div>
-                        <div className="">
+
+                        <div className=" mb-6">
                             <span className="font-normal text-xl
                             md:text-3xl">Web Application Developer</span>
+                        </div>
+
+                        <div>
+                            <button className='bg-customYellow uppercase text-secondaryColor
+                            px-6 py-4 rounded-2xl text-xs font-semibold'>
+                                Hire Me
+                            </button>
                         </div>
                     </div>
                 </div>
