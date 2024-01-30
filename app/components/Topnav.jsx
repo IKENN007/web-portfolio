@@ -14,7 +14,7 @@ const Topnav = () => {
     return (
         <>
             <div id='top-navigation' 
-            className='px-7 py-3 flex items-center fixed w-screen z-10 shadow-md
+            className='px-7 py-3 flex items-center fixed w-screen z-10 shadow-md top-0 backdrop-blur-md
             md:px-20
             duration-300'>
                 
@@ -29,28 +29,28 @@ const Topnav = () => {
                 className='w-2/4 hidden md:block'>
                     <ul className='flex items-center justify-end md:space-x-4 lg:space-x-7'>
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-secondaryColor font-semibold 
+                        text-white font-semibold 
                         hover:border-customYellow 
                         hover:text-customYellow
                         duration-300'>
                             Home
                         </li>
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-secondaryColor font-semibold 
+                        text-white font-semibold 
                         hover:border-customYellow
                         hover:text-customYellow
                         duration-300'>
                             About
                         </li>
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-secondaryColor font-semibold 
+                        text-white font-semibold 
                         hover:border-customYellow 
                         hover:text-customYellow 
                         duration-300'>
                             Portfolio
                         </li>
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-secondaryColor font-semibold 
+                        text-white font-semibold 
                         hover:border-customYellow 
                         hover:text-customYellow 
                         duration-300'>
