@@ -54,6 +54,13 @@ const Topnav = () => {
                         hover:border-customYellow 
                         hover:text-customYellow 
                         duration-300'>
+                            Skills
+                        </li>
+                        <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
+                        text-white font-semibold 
+                        hover:border-customYellow 
+                        hover:text-customYellow 
+                        duration-300'>
                             Contact
                         </li>
                     </ul>
@@ -87,6 +94,10 @@ const Topnav = () => {
                     <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
                     hover:bg-gray-100 hover:text-slate-700">
                         Portfolio
+                    </li>
+                    <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
+                    hover:bg-gray-100 hover:text-slate-700">
+                        Skills
                     </li>
                     <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
                     hover:bg-gray-100 hover:text-slate-700">
