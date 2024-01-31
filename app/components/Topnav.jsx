@@ -21,7 +21,7 @@ const Topnav = () => {
                 <div id='logo-container'
                 className='w-2/4'>
                     <span className=' text-2xl font-extrabold text-customYellow cursor-pointer'>
-                        EFDD
+                        JKCA
                     </span>
                 </div>
 
