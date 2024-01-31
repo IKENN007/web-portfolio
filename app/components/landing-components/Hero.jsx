@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className="h-screen bg-prog-bg bg-no-repeat bg-cover bg-right 
+        <div className="h-screen bg-prog-bg bg-no-repeat bg-cover bg-fixed bg-right 
         md:bg-center duration-300" 
         loading="lazy">
 
@@ -32,7 +32,7 @@ const Hero = () => {
 
                         <div>
                             <button className='bg-customYellow uppercase text-secondaryColor
-                            px-6 py-4 rounded-2xl text-xs font-semibold'>
+                            px-6 py-4 rounded-2xl text-xs font-semibold outline-none'>
                                 Hire Me
                             </button>
                         </div>
