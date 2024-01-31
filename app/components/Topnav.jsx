@@ -80,7 +80,7 @@ const Topnav = () => {
 
             <div id="dropdownDelay"
             className={`${showDropdown ? '' : 'hidden'} 
-            absolute bg-white backdrop-blur-sm bg-opacity-30 z-10 rounded-lg w-full shadow mt-20
+            fixed bg-white backdrop-blur-sm bg-opacity-30 z-10 rounded-lg w-full shadow mt-14
             md:hidden`}>
                 <ul aria-labelledby="trigger-dropdown">
                     <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
