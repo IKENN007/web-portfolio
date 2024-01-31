@@ -11,7 +11,7 @@ const About = () => {
                 <div className="w-full md:w-3/5 pb-12">
 
                     <div className="pb-4">
-                        <h2 className="mb-6 text-5xl font-bold">About Me</h2>
+                        <h2 className="mb-6 text-4xl md:text-5xl font-bold">About Me</h2>
 
                         <div className="mb-4 px-2">
                             <p className="text-base">
@@ -43,7 +43,7 @@ const About = () => {
 
                     <div className=" mt-4">
                         <button className="bg-customYellow uppercase text-secondaryColor px-6 py-4 
-                        rounded-2xl text-xs font-semibold mb-4">
+                        rounded-2xl text-xs font-semibold mb-4 outline-none">
                         Download CV
                         </button>
                     </div>
