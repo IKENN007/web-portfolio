@@ -21,23 +21,22 @@ const About = () => {
                         </div>
 
                         <ul id="details-container" className="px-2 mt-6">
-                        <li className="md:flex mb-3">
-                            <span className="w-1/4 font-semibold text-base me-2">Name: </span>
-                            <span className="w-3/4 text-base">Jon Kenneth C. Alderite</span>
-                        </li>
-                        <li className="md:flex mb-3">
-                            <span className="w-1/4 font-semibold text-base me-2">Date of birth: </span>
-                            <span className="w-3/4 text-base">July 09, 1999</span>
-                        </li>
-                        <li className="md:flex mb-3">
-                            <span className="w-1/4 font-semibold text-base me-2">Phone: </span>
-                            <span className="w-3/4 text-base">+63 928 574 7667</span>
-                        </li>
-                        <li className="md:flex mb-3">
-                            <span className="w-1/4 font-semibold text-base me-2">Email: </span>
-                            <span className="w-3/4 text-base">Jonkennethcayetano@gmail.com</span>
-                        </li>
-                        
+                            <li className="md:flex mb-3">
+                                <span className="w-1/4 font-semibold text-base me-2">Name: </span>
+                                <span className="w-3/4 text-base">Jon Kenneth C. Alderite</span>
+                            </li>
+                            <li className="md:flex mb-3">
+                                <span className="w-1/4 font-semibold text-base me-2">Date of birth: </span>
+                                <span className="w-3/4 text-base">July 09, 1999</span>
+                            </li>
+                            <li className="md:flex mb-3">
+                                <span className="w-1/4 font-semibold text-base me-2">Phone: </span>
+                                <span className="w-3/4 text-base">+63 928 574 7667</span>
+                            </li>
+                            <li className="md:flex mb-3">
+                                <span className="w-1/4 font-semibold text-base me-2">Email: </span>
+                                <span className="w-3/4 text-base">Jonkennethcayetano@gmail.com</span>
+                            </li>
                         </ul>
                     </div>
 
