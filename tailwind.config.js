@@ -19,7 +19,8 @@ module.exports = {
         darkColor: '#0D1B2A',
         lightColor: '#778DA9',
         customGray: '#E0E1DD',
-        customYellow: '#ffbd39'
+        customYellow: '#ffbd39',
+        customBlack: '#1a1a1a'
       }
     },
   },
