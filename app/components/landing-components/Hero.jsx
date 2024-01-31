@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <div className="h-screen bg-prog-bg bg-no-repeat bg-cover bg-right 
-        md:bg-center md:bg-cover duration-300" 
+        md:bg-center duration-300" 
         loading="lazy">
 
             <div className="flex md:bg-black md:backdrop-blur-sm md:bg-opacity-10 px-7 md:px-20 h-screen">
