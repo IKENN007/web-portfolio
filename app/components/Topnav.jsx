@@ -49,13 +49,13 @@ const Topnav = () => {
                         duration-300'>
                             Portfolio
                         </li>
-                        <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
+                        {/* <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
                         text-white font-semibold 
                         hover:border-customYellow 
                         hover:text-customYellow 
                         duration-300'>
-                            Skills
-                        </li>
+                            Experience
+                        </li> */}
                         <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
                         text-white font-semibold 
                         hover:border-customYellow 
@@ -69,9 +69,9 @@ const Topnav = () => {
                 <div id='burger-container'
                 className='flex justify-end w-2/4
                 md:hidden'>
-                    <button id="trigger-dropdown"
+                    <button type="button" id="trigger-dropdown"
                     onClick={toggleDropdown} 
-                    className='text-xl text-customGray font-bold'>
+                    className='text-xl text-customGray font-bold outline-none'>
                         {showDropdown ? <FaX /> : <FaBars />}
                     </button>
 
@@ -95,10 +95,10 @@ const Topnav = () => {
                     hover:bg-gray-100 hover:text-slate-700">
                         Portfolio
                     </li>
-                    <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
+                    {/* <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
                     hover:bg-gray-100 hover:text-slate-700">
-                        Skills
-                    </li>
+                        Experience
+                    </li> */}
                     <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
                     hover:bg-gray-100 hover:text-slate-700">
                         Contact
