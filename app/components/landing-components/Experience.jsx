@@ -83,7 +83,7 @@ const Experience = () => {
                 </div>
                 
                 <div className="lg:w-1/2 lg:px-4">
-                    <div className="rounded-lg mb-7 p-7 bg-secondaryColor">
+                    <div className="rounded-lg p-7 bg-secondaryColor">
                         <span className=" font-black text-2xl text-customYellow">Jun 2021 - Dec 2021</span>
                         <h2 className="text-2xl py-3">Website / Wordpress Developer</h2>
                         <span className=" text-xs font-semibold uppercase">GoCrayons Digital Inc.</span>
