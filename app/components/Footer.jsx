@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { 
     FaLocationDot, 
     FaPhone, 
@@ -5,15 +7,16 @@ import {
     FaLinkedin, 
     FaSuitcase, 
     FaSquareInstagram,
-    FaSquareGithub } 
+    FaSquareGithub,
+    FaArrowRightLong } 
 from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div id='footer' className='border px-7 py-28 text-white md:px-20'>
+        <div id='footer' className='px-7 py-28 text-white md:px-20'>
             <div className='flex mb-12 space-x-10'>
 
-                <div className='w-1/4 border'>
+                <div className='w-1/4'>
                     <div className='mb-6'>
                         <h2 className='mb-10 text-2xl font-semibold'>
                             About
@@ -26,16 +29,39 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='w-1/4 border'>
+                <div className='w-1/4'>
                     <div className='mb-6 ms-6'>
                         <h2 className='mb-10 text-2xl font-semibold'>
                             Links
                         </h2>
 
-                        <p className='font-normal text-base'>
-                        I am an enthusiastic web developer living in General Trias, Cavite, with 
-                        3 years of experience in web application, front-end development, and REST API.
-                        </p>
+                        <ul>
+                            <Link href='#hero-section'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">Home</span>
+                                </li>
+                            </Link>
+                            <Link href='#about-section'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">About</span>
+                                </li>
+                            </Link>
+                            <Link href='#portfolio-section'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">Portfolio</span>
+                                </li>
+                            </Link>
+                            <Link href='#portfolio-section'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">Contact</span>
+                                </li>
+                            </Link>
+                            
+                        </ul>
                     </div>
                 </div>
 
