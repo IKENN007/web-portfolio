@@ -39,7 +39,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='w-1/4 border'>
+                <div className='w-1/4'>
                     <div className='mb-6 ms-6'>
                         <h2 className='mb-10 text-2xl font-semibold'>
                             Social
