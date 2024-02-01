@@ -146,12 +146,12 @@ const Portfolio = () => {
                     <div>
                         <div className="w-full">
                         <h4 className="text-customYellow w-full font-semibold uppercase text-xl">
-                            PRPO System Request
+                            Facilities Admin Dashboard
                         </h4>
                         </div>
                         <div className="w-full">
                         <span className="text-customYellow text-xs font-semibold uppercase">
-                            Monitor the approval status and delivery.
+                            Facilities Department System
                         </span>
                         </div>
                     </div>
