@@ -1,5 +1,6 @@
 // ? START COMPONENTS ---
 import Topnav from "./components/Topnav";
+import Footer from "./components/Footer";
 // ! END COMPONENTS ---
 
 // ? START FONTS ---
@@ -29,13 +30,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link rel="preload" href="./images/prog-bg.jpg" as="image" />
-      <body className={poppins.className}>
+
+      <body className={`${poppins.className } bg-slate-900`}>
 
         <Topnav />
 
         <main>
           {children}
         </main>
+
+        <Footer />
         
       </body>
     </html>
