@@ -2,7 +2,7 @@ import React from 'react'
 
 const Portfolio = () => {
     return (
-        <div id="portfolio-section" className="px-7 pt-28 bg-slate-900 text-white md:px-20">
+        <div id="projects-section" className="px-7 pt-28 bg-slate-900 text-white md:px-20">
 
             <div className="w-full pb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">Projects</h2>
