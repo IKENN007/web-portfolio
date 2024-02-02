@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Skill = () => {
     return (
         <div className="bg-slate-900">
@@ -23,7 +21,7 @@ const Skill = () => {
                                 </div>
                             {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="w-full bg-customYellow h-2.5 rounded-full"></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full transition-all duration-500 animateSkill-1"></div>
                                 </div>
                             </div>
 
@@ -35,7 +33,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full" style={{width: '90%'}}></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-2"></div>
                                 </div>
                             </div>
 
@@ -47,7 +45,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full" style={{width: '85%'}}></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-3"></div>
                                 </div>
                             </div>
 
@@ -59,7 +57,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full" style={{width: '85%'}}></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-4"></div>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +72,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full" style={{width: '90%'}}></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-5"></div>
                                 </div>
                             </div>
 
@@ -86,7 +84,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full" style={{width: '70%'}}></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-6"></div>
                                 </div>
                             </div>
 
@@ -98,7 +96,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full" style={{width: '80%'}}></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-7"></div>
                                 </div>
                             </div>
 
@@ -110,7 +108,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full" style={{width: '75%'}}></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-1"></div>
                                 </div>
                             </div>
                         </div>
