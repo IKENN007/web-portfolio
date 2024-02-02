@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import Link from "next/link";
+
 import { FaBars, FaX } from "react-icons/fa6";
 
 const Topnav = () => {
@@ -14,7 +16,7 @@ const Topnav = () => {
     return (
         <>
             <div id='top-navigation' 
-            className='px-7 py-3 flex items-center fixed w-screen z-10 shadow-md top-0 backdrop-blur-md
+            className='px-7 py-3 flex items-center fixed w-screen z-20 shadow-md top-0 backdrop-blur-md
             md:px-20
             duration-300'>
                 
@@ -28,41 +30,47 @@ const Topnav = () => {
                 <div id='menu-container'
                 className='w-2/4 hidden md:block'>
                     <ul className='flex items-center justify-end md:space-x-4 lg:space-x-7'>
-                        <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-white font-semibold 
-                        hover:border-customYellow 
-                        hover:text-customYellow
-                        duration-300'>
-                            Home
-                        </li>
-                        <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-white font-semibold 
-                        hover:border-customYellow
-                        hover:text-customYellow
-                        duration-300'>
-                            About
-                        </li>
-                        <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-white font-semibold 
-                        hover:border-customYellow 
-                        hover:text-customYellow 
-                        duration-300'>
-                            Portfolio
-                        </li>
-                        {/* <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-white font-semibold 
-                        hover:border-customYellow 
-                        hover:text-customYellow 
-                        duration-300'>
-                            Experience
-                        </li> */}
-                        <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                        text-white font-semibold 
-                        hover:border-customYellow 
-                        hover:text-customYellow 
-                        duration-300'>
-                            Contact
-                        </li>
+
+                        <Link href='#hero-section'>
+                            <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
+                            text-white font-semibold 
+                            hover:border-customYellow 
+                            hover:text-customYellow
+                            duration-300'>
+                                Home
+                            </li>
+                        </Link>
+
+                        <Link href='#about-section'>
+                            <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
+                            text-white font-semibold 
+                            hover:border-customYellow
+                            hover:text-customYellow
+                            duration-300'>
+                                About
+                            </li>
+                        </Link>
+
+                        <Link href='#experience-section'>
+                            <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
+                            text-white font-semibold 
+                            hover:border-customYellow 
+                            hover:text-customYellow 
+                            duration-300'>
+                                Experience
+                            </li>
+                        </Link>
+
+                        <Link href='#projects-section'>
+                            <li className={`border-b-2 border-transparent px-3 py-1 cursor-pointer 
+                            text-white font-semibold 
+                            hover:border-customYellow 
+                            hover:text-customYellow 
+                            duration-300`}>
+                                Projects
+                            </li>
+                        </Link>
+                        
                     </ul>
                 </div>
 
@@ -83,26 +91,33 @@ const Topnav = () => {
             fixed bg-white backdrop-blur-sm bg-opacity-30 z-10 rounded-lg w-full shadow mt-14
             md:hidden`}>
                 <ul aria-labelledby="trigger-dropdown">
-                    <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
-                    hover:bg-gray-100 hover:text-slate-700">
-                        Home
-                    </li>
-                    <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
-                    hover:bg-gray-100 hover:text-slate-700">
-                        About
-                    </li>
-                    <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
-                    hover:bg-gray-100 hover:text-slate-700">
-                        Portfolio
-                    </li>
-                    {/* <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
-                    hover:bg-gray-100 hover:text-slate-700">
-                        Experience
-                    </li> */}
-                    <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
-                    hover:bg-gray-100 hover:text-slate-700">
-                        Contact
-                    </li>
+                    <Link href='#hero-section'>
+                        <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
+                        hover:bg-gray-100 hover:text-slate-700">
+                            Home
+                        </li>
+                    </Link>
+                    
+                    <Link href='#about-section'>
+                        <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
+                        hover:bg-gray-100 hover:text-slate-700">
+                            About
+                        </li>
+                    </Link>
+                    
+                    <Link href='#experience-section'>
+                        <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
+                        hover:bg-gray-100 hover:text-slate-700">
+                            Experience
+                        </li>
+                    </Link>
+                    
+                    <Link href='#projects-section'>
+                        <li className="py-2 px-7 text-customGray font-semibold cursor-pointer
+                        hover:bg-gray-100 hover:text-slate-700">
+                            Projects
+                        </li>
+                    </Link>
                 </ul>
             </div>
 
