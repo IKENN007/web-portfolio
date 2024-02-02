@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Link from "next/link";
 
@@ -8,6 +8,37 @@ import { FaBars, FaX } from "react-icons/fa6";
 
 const Topnav = () => {
     const [showDropdown, setShowDropdown] = useState(false)
+
+    const [activeHero, setActiveHome] = useState(true)
+    const [activeAbout, setActiveAbout] = useState(false)
+    
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const aboutDiv = document.getElementById('about-section');
+            const rectAbout = aboutDiv.getBoundingClientRect();
+            const heroDiv = document.getElementById('hello');
+            const rectHero = heroDiv.getBoundingClientRect();
+    
+            if (rectAbout.top >= 0 && rectAbout.bottom <= window.innerHeight) {
+                setActiveAbout(true);
+            } else {
+                setActiveAbout(false);
+            }
+            if (rectHero.top >= 0 && rectHero.bottom <= window.innerHeight) {
+                setActiveHome(true);
+                console.log('Hero')
+            } else {
+                setActiveHome(false);
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown)
@@ -32,21 +63,23 @@ const Topnav = () => {
                     <ul className='flex items-center justify-end md:space-x-4 lg:space-x-7'>
 
                         <Link href='#hero-section'>
-                            <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                            text-white font-semibold 
-                            hover:border-customYellow 
+                            <li className={`
+                            ${activeHero ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
+                            hover:border-customYellow
                             hover:text-customYellow
-                            duration-300'>
+                            duration-300`}>
                                 Home
                             </li>
                         </Link>
 
                         <Link href='#about-section'>
-                            <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                            text-white font-semibold 
+                            <li className={`
+                            ${activeAbout ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
                             hover:border-customYellow
                             hover:text-customYellow
-                            duration-300'>
+                            duration-300 `}>
                                 About
                             </li>
                         </Link>

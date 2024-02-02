@@ -12,7 +12,7 @@ const Hero = () => {
                 lg:w-2/4 
                 md:w-3/4">
                     <div>
-                        <div>
+                        <div id='hello'>
                             <span className="text-sm font-semibold uppercase">Hello!</span>
                         </div>
 
