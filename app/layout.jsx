@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <link rel="preload" href="./images/prog-bg.jpg" as="image" />
 
       <body className={`${poppins.className } bg-slate-900`}>
