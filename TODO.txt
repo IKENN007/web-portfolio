@@ -1,0 +1,5 @@
+TODO 1: Contact Form Section.
+TODO 2: Active state of menu when section is in viewport.
+TODO 3: Animation in skills progress bar.
+TODO 4: Appearance animation in each section or elements.
+TODO 5: Portfolio project modal image and modal details.
