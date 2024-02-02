@@ -1,3 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animateSkill-1 {
+    animation: expandHTML 2s ease-out forwards;
+}
+@keyframes expandHTML {
+    from  {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}
+
+.animateSkill-2 {
+    animation: expandCSS 2s ease-out forwards;
+}
+@keyframes expandCSS {
+    from  {
+        width: 0%;
+    } to {
+        width: 90%;
+    }
+}
+
+.animateSkill-3 {
+    animation: expandJS 2s ease-out forwards;
+}
+@keyframes expandJS {
+    from  {
+        width: 0%;
+    } to {
+        width: 85%;
+    }
+}
+
+.animateSkill-4 {
+    animation: expandJQuery 2s ease-out forwards;
+}
+@keyframes expandJQuery {
+    from  {
+        width: 0%;
+    } to {
+        width: 85%;
+    }
+}
+
+.animateSkill-5 {
+    animation: expandNEXT 2s ease-out forwards;
+}
+@keyframes expandNEXT {
+    from  {
+        width: 0%;
+    } to {
+        width: 90%;
+    }
+}
+
+.animateSkill-6 {
+    animation: expandTailwind 2s ease-out forwards;
+}
+@keyframes expandTailwind {
+    from  {
+        width: 0%;
+    } to {
+        width: 70%;
+    }
+}
+
+.animateSkill-7 {
+    animation: expandPHP 2s ease-out forwards;
+}
+@keyframes expandPHP {
+    from  {
+        width: 0%;
+    } to {
+        width: 80%;
+    }
+}
+
+.animateSkill-8 {
+    animation: expandSQL 2s ease-out forwards;
+}
+@keyframes expandSQL {
+    from  {
+        width: 0%;
+    } to {
+        width: 80%;
+    }
+}
