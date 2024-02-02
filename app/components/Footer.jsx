@@ -125,7 +125,10 @@ const Footer = () => {
             </div>
 
             <div id='copyright' className='w-full text-center'>
-                <span>Copyright ©2024 All rights reserved | This template is made with by Colorlib</span>
+                <span>
+                    Copyright ©2024 Jon Kenneth C. Alderite. All rights reserved | 
+                    <a href="https://www.freepik.com/free-photo/closeup-computer-display-software-developer-typing-database-functions-script-it-startup-agency-display-concept-programer-writing-source-code-scrolling-text-programming-language_22453734.htm#query=web%20development%20dark&position=23&from_view=search&track=ais&uuid=e3df42c0-5e81-45e6-86cc-1fae2b6c6f90"> Image by DC Studio</a> on Freepik
+                </span>
             </div>
         </div>
     )
