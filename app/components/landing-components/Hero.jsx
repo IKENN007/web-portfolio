@@ -31,10 +31,10 @@ const Hero = () => {
                         </div>
 
                         <div>
-                            <button className='bg-customYellow uppercase text-secondaryColor
+                            <a href='tel:+639285747667' className='bg-customYellow uppercase text-secondaryColor
                             px-6 py-4 rounded-2xl text-xs font-semibold outline-none'>
                                 Hire Me
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
