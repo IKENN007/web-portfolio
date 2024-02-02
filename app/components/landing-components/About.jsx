@@ -40,7 +40,7 @@ const About = () => {
                         </ul>
                     </div>
 
-                    <div className=" mt-4">
+                    <div className="hidden mt-4">
                         <button className="bg-customYellow uppercase text-secondaryColor px-6 py-4 
                         rounded-2xl text-xs font-semibold mb-4 outline-none">
                         Download CV
