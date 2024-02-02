@@ -14,9 +14,9 @@ from "react-icons/fa6";
 const Footer = () => {
     return (
         <div id='footer' className='px-7 py-28 text-white md:px-20'>
-            <div className='flex mb-12 space-x-10'>
+            <div className='md:flex mb-12 md:space-x-10'>
 
-                <div className='w-1/4'>
+                <div className='md:w-1/3 lg:w-1/4'>
                     <div className='mb-6'>
                         <h2 className='mb-10 text-2xl font-semibold'>
                             About
@@ -29,9 +29,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='w-1/4'>
+                <div className='w-1/4 hidden lg:block'>
                     <div className='mb-6 ms-6'>
-                        <h2 className='mb-10 text-2xl font-semibold'>
+                        {/* <h2 className='mb-10 text-2xl font-semibold'>
                             Links
                         </h2>
 
@@ -61,12 +61,12 @@ const Footer = () => {
                                 </li>
                             </Link>
                             
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
 
-                <div className='w-1/4'>
-                    <div className='mb-6 ms-6'>
+                <div className='md:w-1/3 lg:w-1/4'>
+                    <div className='mb-6 md:ms-6'>
                         <h2 className='mb-10 text-2xl font-semibold'>
                             Social
                         </h2>
@@ -82,11 +82,11 @@ const Footer = () => {
                                 href="https://github.com/IKENN007" 
                                 className="text-3xl"><FaSquareGithub /></a>
                             </li>
-                            <li className="mb-3">
+                            {/* <li className="mb-3">
                                 <a target="blank" 
                                 href="https://www.linkedin.com/in/jon-kenneth-alderite-27a65a198" 
                                 className="text-3xl"><FaSquareInstagram /></a>
-                            </li>
+                            </li> */}
                             {/* <li className="mb-3">
                                 <a target="blank" href="https://kennethalderite.jobs180.com/" 
                                 className="text-3xl"><FaSuitcase /></a>
@@ -95,8 +95,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='w-1/4'>
-                    <div className='mb-6 ms-6'>
+                <div className='md:w-1/3 lg:w-1/4'>
+                    <div className='mb-6 md:ms-6'>
                         <h2 className='mb-10 text-2xl font-semibold'>
                             Contact
                         </h2>
