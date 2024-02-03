@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from "next/image"
 
 const About = () => {
     return (
@@ -6,13 +6,25 @@ const About = () => {
             <div id='about-section' className="px-7 bg-slate-900 text-white md:flex
             md:px-20 md:pt-28">
 
-                <div className="md:w-1/2 lg:w-2/5 relative pb-12 flex justify-center md:block">
+                <div className="relative pb-12 flex object-contain justify-center 
+                bg-contain bg-no-repeat bg-center h-96 
+                md:w-1/2 lg:w-2/5 "
+                style={{
+                    backgroundImage: 'url("./images/me/Alderite_Jon_Kenneth_sml-removebg-preview.png")'
+                }}>
                     <div className='absolute h-full w-full bg-slate-900 bg-opacity-20'></div>
-                    <img src='./images/me/Alderite_Jon_Kenneth_sml-removebg-preview.png'/>
+                    {/* <Image src='/images/me/Alderite_Jon_Kenneth_sml-removebg-preview.png' 
+                        loading="lazy" 
+                        alt="Kenneth" 
+                        width={300} 
+                        height={300} 
+                        className="lg:border w-4/5 md:w-full h-auto border"
+                        /> */}
+                    {/* <img src='./images/me/Alderite_Jon_Kenneth_sml-removebg-preview.png'/> */}
                 </div>
 
                 {/* pb-12 */}
-                <div className="md:w-1/2 lg:w-3/5 flex items-center">
+                <div className="pt-8 md:pt-0 md:w-1/2 lg:w-3/5 flex items-center">
 
                     <div>
                         <div className="pb-4">
