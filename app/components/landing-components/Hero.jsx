@@ -31,7 +31,8 @@ const Hero = () => {
                         </div>
 
                         <div>
-                            <a href='tel:+639285747667' className='bg-customYellow uppercase text-secondaryColor
+                            <a target='blank' href='https://kennethalderite.jobs180.com/' 
+                            className='bg-customYellow uppercase text-secondaryColor
                             px-6 py-4 rounded-2xl text-xs font-semibold outline-none'>
                                 Hire Me
                             </a>
