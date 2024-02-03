@@ -7,7 +7,7 @@ const About = () => {
             md:px-20 md:pt-28">
 
                 <div className="md:w-1/2 lg:w-2/5 relative pb-12 flex justify-center md:block">
-                    <div className='absolute h-full w-full bg-slate-900 bg-opacity-50'></div>
+                    <div className='absolute h-full w-full bg-slate-900 bg-opacity-70'></div>
                     <img src='./images/me/Alderite_Jon_Kenneth_sml-removebg-preview.png'/>
                 </div>
 
