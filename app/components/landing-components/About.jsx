@@ -36,11 +36,11 @@ const About = () => {
                                 </li>
                                 <li className="md:flex mb-3">
                                     <span className="w-1/4 font-semibold text-base me-2">Phone: </span>
-                                    <span className="w-3/4 text-base">+63 928 574 7667</span>
+                                    <a href='tel:+639285747667' className="w-3/4 text-base">+63 928 574 7667</a>
                                 </li>
-                                <li className="md:flex mb-3">
+                                <li className="lg:flex mb-3">
                                     <span className="w-1/4 font-semibold text-base me-2">Email: </span>
-                                    <span className="w-3/4 text-base">Jonkennethcayetano@gmail.com</span>
+                                    <a href='mailto:Jonkennethcayetano@gmail.com' className="w-3/4 text-base">Jonkennethcayetano@gmail.com</a>
                                 </li>
                             </ul>
                         </div>

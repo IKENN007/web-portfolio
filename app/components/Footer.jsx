@@ -11,6 +11,10 @@ import {
     FaArrowRightLong } 
 from "react-icons/fa6";
 
+import { 
+    SiGmail } 
+from "react-icons/si";
+
 const Footer = () => {
     return (
         <div id='footer' className='px-7 py-28 text-white md:px-20'>
@@ -113,9 +117,9 @@ const Footer = () => {
                                 <a href="tel:+639285747667" className="w-5/6">+63 928 574 7667</a>
                             </li>
                             <li className="flex mb-3">
-                                <span className=" w-1/6 text-lg"><FaEnvelope /></span>
+                                <span className=" w-1/6 text-lg"><SiGmail /></span>
                                 <a href="mailto:Jonkennethcayetano@gmail.com" className="w-5/6">
-                                    Jonkennethcayetano@gmail.com
+                                    Jonkennethcayetanoalderite
                                 </a>
                             </li>
                         </ul>
