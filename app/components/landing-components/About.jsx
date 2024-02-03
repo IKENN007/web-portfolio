@@ -6,9 +6,14 @@ const About = () => {
             <div id='about-section' className="px-7 pt-28 bg-slate-900 text-white flex
             md:px-20">
 
-                <div className="w-2/5  hidden md:block"></div>
+                <div className="w-2/5  hidden md:block relative">
+                    <div className='absolute h-full w-full bg-slate-900 bg-opacity-50'>
 
-                <div className="w-full md:w-3/5 pb-12">
+                    </div>
+                    <img src='./images/me/Alderite_Jon_Kenneth_sml-removebg-preview.png'/>
+                </div>
+
+                <div className="w-full md:w-3/5 pb-12 items-center border">
 
                     <div className="pb-4">
                         <h2 className="mb-6 text-4xl md:text-5xl font-bold">About Me</h2>
@@ -40,7 +45,7 @@ const About = () => {
                         </ul>
                     </div>
 
-                    <div className="hidden mt-4">
+                    <div className="mt-4">
                         <button className="bg-customYellow uppercase text-secondaryColor px-6 py-4 
                         rounded-2xl text-xs font-semibold mb-4 outline-none">
                         Download CV
