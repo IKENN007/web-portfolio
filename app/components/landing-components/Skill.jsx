@@ -2,7 +2,7 @@ const Skill = () => {
     return (
         <div className="bg-slate-900">
             {/* bg-slate-400 backdrop-blur-sm bg-opacity-10 */}
-            <div id="experience" className="px-7 py-28 text-white md:px-20 ">
+            <div id="experience" className="px-7 pt-28 text-white md:px-20 ">
 
                 <div className=" pb-8 md:pb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">Skills</h2>
