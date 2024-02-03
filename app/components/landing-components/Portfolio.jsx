@@ -18,10 +18,10 @@ const Portfolio = () => {
                             items-center justify-center duration-300 cursor-pointer">
                                 <div>
                                     <div className="w-full">
-                                    <h4 className="text-customYellow w-full font-semibold uppercase text-xl 
-                                    lg:text-3xl">
-                                        PRPO System Landing Page
-                                    </h4>
+                                        <h4 className="text-customYellow w-full font-semibold uppercase text-xl 
+                                        lg:text-3xl">
+                                            PRPO System Landing Page
+                                        </h4>
                                     </div>
 
                                     <div className="w-full">
