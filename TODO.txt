@@ -3,3 +3,4 @@ TODO 1: Contact Form Section.
 TODO 3: Animation in skills progress bar.
 TODO 4: Appearance animation in each section or elements.
 TODO 5: Portfolio project modal image and modal details.
+TODO 6: Nav mobile behavior.
