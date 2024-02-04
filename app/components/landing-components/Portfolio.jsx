@@ -5,7 +5,7 @@ const Portfolio = () => {
         <div className="px-7 pt-28 bg-slate-900 text-white md:px-20">
 
             <div className="w-full pb-12">
-            <h2 id="projects-section" 
+            <h2 id="projects" 
             className="text-4xl md:text-5xl font-bold mb-6 text-center">Projects</h2>
             </div>
 
@@ -50,8 +50,7 @@ const Portfolio = () => {
                             items-center justify-center duration-300 cursor-pointer">
                                 <div>
                                     <div className="w-full">
-                                        <h4 className="text-customYellow w-full font-semibold uppercase text-xl 
-                                        lg:text-3xl">
+                                        <h4 className="text-customYellow w-full font-semibold uppercase text-xl">
                                             PRPO System Items Page
                                         </h4>
                                     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div id='hero-section' className="h-screen bg-prog-bg bg-no-repeat bg-cover bg-fixed bg-right 
+        <div id='home' className="h-screen bg-prog-bg bg-no-repeat bg-cover bg-fixed bg-right 
         md:bg-center duration-300" 
         loading="lazy">
 

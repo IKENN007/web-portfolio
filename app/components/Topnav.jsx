@@ -19,11 +19,11 @@ const Topnav = () => {
         const handleScroll = () => {
             const heroDiv = document.getElementById('hello');
             const rectHero = heroDiv.getBoundingClientRect();
-            const aboutDiv = document.getElementById('about-section');
+            const aboutDiv = document.getElementById('about');
             const rectAbout = aboutDiv.getBoundingClientRect();
-            const expDiv = document.getElementById('experience-section');
+            const expDiv = document.getElementById('experience');
             const rectExp = expDiv.getBoundingClientRect();
-            const prjDiv = document.getElementById('project-image-container');
+            const prjDiv = document.getElementById('projects');
             const rectPrj = prjDiv.getBoundingClientRect();
     
             if (rectHero.top >= 0 && rectHero.bottom <= window.innerHeight) {
@@ -77,7 +77,7 @@ const Topnav = () => {
                 className='w-2/4 hidden md:block'>
                     <ul className='flex items-center justify-end md:space-x-4 lg:space-x-7'>
 
-                        <Link href='#hero-section'>
+                        <Link href='#home'>
                             <li className={`
                             ${activeHero ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
                             border-b-2  px-3 py-1 cursor-pointer font-semibold 
@@ -88,7 +88,7 @@ const Topnav = () => {
                             </li>
                         </Link>
 
-                        <Link href='#about-section'>
+                        <Link href='#about'>
                             <li className={`
                             ${activeAbout ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
                             border-b-2  px-3 py-1 cursor-pointer font-semibold 
@@ -99,7 +99,7 @@ const Topnav = () => {
                             </li>
                         </Link>
 
-                        <Link href='#experience-section'>
+                        <Link href='#experience'>
                             <li className={`
                             ${activeExp ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
                             border-b-2  px-3 py-1 cursor-pointer font-semibold 
@@ -110,7 +110,7 @@ const Topnav = () => {
                             </li>
                         </Link>
 
-                        <Link href='#projects-section'>
+                        <Link href='#projects'>
                             <li className={`
                             ${activePrj ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
                             border-b-2  px-3 py-1 cursor-pointer font-semibold 
