@@ -14,10 +14,11 @@ const Experience = () => {
     }
 
     return (
-        <div id="experience-section" className="px-7 pt-28 bg-slate-900 text-white md:px-20">
+        <div className="px-7 pt-28 bg-slate-900 text-white md:px-20">
 
             <div className="w-full pb-12">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">Experience</h2>
+                <h2 id="experience-section" 
+                className="text-4xl md:text-5xl font-bold mb-6 text-center">Experience</h2>
             </div>
 
             <div className="lg:flex lg:space-x-2">

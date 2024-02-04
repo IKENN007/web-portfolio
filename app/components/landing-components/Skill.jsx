@@ -108,7 +108,7 @@ const Skill = () => {
                                 </div>
                                 {/* // ? SKILL BAR */}
                                 <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-1"></div>
+                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-8"></div>
                                 </div>
                             </div>
                         </div>

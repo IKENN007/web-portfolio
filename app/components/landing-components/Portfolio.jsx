@@ -2,10 +2,11 @@ import Image from "next/image"
 
 const Portfolio = () => {
     return (
-        <div id="projects-section" className="px-7 pt-28 bg-slate-900 text-white md:px-20">
+        <div className="px-7 pt-28 bg-slate-900 text-white md:px-20">
 
             <div className="w-full pb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">Projects</h2>
+            <h2 id="projects-section" 
+            className="text-4xl md:text-5xl font-bold mb-6 text-center">Projects</h2>
             </div>
 
             <div id="project-image-container">

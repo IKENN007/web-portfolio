@@ -11,25 +11,40 @@ const Topnav = () => {
 
     const [activeHero, setActiveHome] = useState(true)
     const [activeAbout, setActiveAbout] = useState(false)
+    const [activeExp, setActiveExp] = useState(false)
+    const [activePrj, setActivePrj] = useState(false)
     
 
     useEffect(() => {
         const handleScroll = () => {
-            const aboutDiv = document.getElementById('about-section');
-            const rectAbout = aboutDiv.getBoundingClientRect();
             const heroDiv = document.getElementById('hello');
             const rectHero = heroDiv.getBoundingClientRect();
+            const aboutDiv = document.getElementById('about-section');
+            const rectAbout = aboutDiv.getBoundingClientRect();
+            const expDiv = document.getElementById('experience-section');
+            const rectExp = expDiv.getBoundingClientRect();
+            const prjDiv = document.getElementById('project-image-container');
+            const rectPrj = prjDiv.getBoundingClientRect();
     
+            if (rectHero.top >= 0 && rectHero.bottom <= window.innerHeight) {
+                setActiveHome(true);
+            } else {
+                setActiveHome(false);
+            }
             if (rectAbout.top >= 0 && rectAbout.bottom <= window.innerHeight) {
                 setActiveAbout(true);
             } else {
                 setActiveAbout(false);
             }
-            if (rectHero.top >= 0 && rectHero.bottom <= window.innerHeight) {
-                setActiveHome(true);
-                console.log('Hero')
+            if (rectExp.top >= 0 && rectExp.bottom <= window.innerHeight) {
+                setActiveExp(true);
             } else {
-                setActiveHome(false);
+                setActiveExp(false);
+            }
+            if (rectPrj.top >= 0 && rectPrj.bottom <= window.innerHeight) {
+                setActivePrj(true);
+            } else {
+                setActivePrj(false);
             }
         };
     
@@ -79,26 +94,28 @@ const Topnav = () => {
                             border-b-2  px-3 py-1 cursor-pointer font-semibold 
                             hover:border-customYellow
                             hover:text-customYellow
-                            duration-300 `}>
+                            duration-300`}>
                                 About
                             </li>
                         </Link>
 
                         <Link href='#experience-section'>
-                            <li className='border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                            text-white font-semibold 
-                            hover:border-customYellow 
-                            hover:text-customYellow 
-                            duration-300'>
+                            <li className={`
+                            ${activeExp ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
+                            hover:border-customYellow
+                            hover:text-customYellow
+                            duration-300`}>
                                 Experience
                             </li>
                         </Link>
 
                         <Link href='#projects-section'>
-                            <li className={`border-b-2 border-transparent px-3 py-1 cursor-pointer 
-                            text-white font-semibold 
-                            hover:border-customYellow 
-                            hover:text-customYellow 
+                            <li className={`
+                            ${activePrj ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
+                            hover:border-customYellow
+                            hover:text-customYellow
                             duration-300`}>
                                 Projects
                             </li>
