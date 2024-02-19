@@ -31,10 +31,10 @@ const Hero = () => {
                         </div>
 
                         <div>
-                            <a target='blank' href='https://kennethalderite.jobs180.com/' 
+                            <a target='blank' href='./cv/Jon-Kenneth-Alderite-CV.pdf' 
                             className='bg-customYellow uppercase text-secondaryColor
                             px-6 py-4 rounded-2xl text-xs font-semibold outline-none'>
-                                Hire Me
+                                Download CV
                             </a>
                         </div>
                     </div>

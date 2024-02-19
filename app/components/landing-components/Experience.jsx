@@ -18,7 +18,7 @@ const Experience = () => {
 
             <div className="w-full pb-12">
                 <h2 id="experience" 
-                className="text-4xl md:text-5xl font-bold mb-6 text-center">Experience</h2>
+                className="text-4xl md:text-5xl font-bold mb-6 text-center">Related Experience</h2>
             </div>
 
             <div className="lg:flex lg:space-x-2">
@@ -30,9 +30,10 @@ const Experience = () => {
                         <span className=" text-xs font-semibold uppercase">M.A. TECHNOLOGY, INC.</span>
 
                         <p className=" mt-6 mb-6 text-base">
-                            I develop in-house web applications and dashboards that are used by different 
-                            departments to digitalize their current processes, lessen the use of Excel files 
-                            for tracking records and reports, and allow the users to work smoothly and proficiently.
+                            I specialize in the creation of in-house web applications and dashboards, which are utilized by
+                            various departments to digitize their existing procedures. This not only reduces reliance on Excel for
+                            record-keeping and reporting but also facilitates a more seamless and efficient workflow for
+                            end-users.
                         </p>
 
                         <div className={`${readMA ? '' : 'hidden'}
@@ -40,22 +41,24 @@ const Experience = () => {
                             <h2 className="mb-2">Key Responsibilities: </h2>
                             <ul className="list-disc">
                                 <li className="ms-4 text-base">
-                                    Collaborated with other departments and developers to implement the desired 
-                                    features and design into a functional and user-friendly web application.
+                                    Engaged in cross-departmental collaboration with developers to successfully integrate desired
+                                    functionalities and design into a user-centric web application.
                                 </li>
                                 <li className="ms-4 text-base">
-                                    Utilized HTML, CSS, JavaScript, JQuery, NEXT.js, and Tailwind to build the 
-                                    front-end of the website.
+                                    Utilized HTML, CSS, JavaScript, JQuery, Next.js, React.js, Bootstrap, and Tailwind to construct
+                                    the front-end of the website.
                                 </li>
                                 <li className="ms-4 text-base">
-                                    Utilized PHP Laravel and Python Flask for the back-end of the web application.
+                                    Leveraged PHP Laravel and Python Flask frameworks to architect the backend infrastructure of
+                                    the web application.
                                 </li>
                                 <li className="ms-4 text-base">
-                                    Implemented responsive design principles to ensure the web apps look good on all 
-                                    devices, from desktop computers to mobile phones.
+                                    Applied responsive design principles to ensure the web applications are optimized for viewing
+                                    across a spectrum of devices, from desktop computers to mobile handhelds.
                                 </li>
                                 <li className="ms-4 text-base">
-                                    Optimized web app performance for fast loading times.
+                                    Enhanced the efficiency and user experience of web applications by optimizing performance to
+                                    ensure rapid loading times.
                                 </li>
                             </ul>
                         </div>
@@ -68,8 +71,8 @@ const Experience = () => {
                                     Successfully launched the web app on schedule.
                                 </li>
                                 <li className="ms-4 text-base">
-                                    Received positive feedback from both the users and the company president, 
-                                    praising the web app's functionality, design, and ease of use.
+                                    Received accolades from both end-users and the company's executive leadership for the web
+                                    application's functionality, aesthetic appeal, and user-friendly interface.
                                 </li>
                             </ul>
                         </div>
@@ -90,8 +93,8 @@ const Experience = () => {
                         <span className=" text-xs font-semibold uppercase">GoCrayons Digital Inc.</span>
 
                         <p className=" mt-6 mb-6">
-                            I develop and maintain WordPress websites to meet client specifications, ensuring a 
-                            seamless integration of design and functionality.
+                            Managed the development and maintenance of WordPress websites, ensuring alignment with client
+                            specifications and the integration of aesthetic design with functional capabilities.
                         </p>
 
                         <div className={`${readGC ? '' : 'hidden'}

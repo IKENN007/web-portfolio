@@ -58,7 +58,7 @@ const About = () => {
                         </div>
 
                         <div className="mt-4">
-                            <a target='blank' href='./cv/Jon Kenneth-Alderite-Resume.pdf' 
+                            <a target='blank' href='./cv/Jon-Kenneth-Alderite-CV.pdf' 
                             className="bg-customYellow uppercase text-secondaryColor px-6 py-4 
                             rounded-2xl text-xs font-semibold mb-4 outline-none">
                             Download CV
