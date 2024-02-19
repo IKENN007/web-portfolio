@@ -4,3 +4,26 @@ TODO 3: Animation in skills progress bar.
 TODO 4: Appearance animation in each section or elements.
 TODO 5: Portfolio project modal image and modal details.
 TODO 6: Nav mobile behavior.
+
+
+
+! TOP NAV FEATURES (DESKTOP / MOBILE)
+? When scroll up, show the sticky navigation. When Scroll down, hide the sticky navigation.
+? Contact button in the top nav. Top Right corner.
+? Menu should be under <nav aria-label="primary menu"></nav> tag and inside nav is <ul></ul>.
+? Top Left: LOGO; Middle: Menu; Top Right: CTA (Call To Action);
+? Always show navigation on DESKTOP.
+? eCommerce: Have a mega menu with image of products.; Increase revenue and convertions.
+? No SOCIAL MEDIA ICONS in navigation, it encourages users to leaving. Keep in footer.
+? Add INDICATORS if a dropdown menu.
+
+
+! FOOTERS (DESKTOP / MOBILE)
+* SMALL TO MEDIUM WEBSITE
+? 4 column footer
+? 1st column from left: Summary about the company or website with LOGO and 2 to 3 paragraph about the company and what they do.
+? 2nd column from left: Links to primary navigation has. (Doormat Navigation).
+? 3rd column from left: Actions items [Services or Products].
+? 4th column from left: Contact information. [Email, Location, Contact Number] [Social Media]
+* USEFUL
+? Add AWARDS.
