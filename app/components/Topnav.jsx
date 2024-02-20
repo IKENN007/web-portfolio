@@ -67,61 +67,72 @@ const Topnav = () => {
             duration-300'>
                 
                 <div id='logo-container'
-                className='w-2/4'>
-                    <span className=' text-2xl font-extrabold text-customYellow cursor-pointer'>
+                className='w-1/2'>
+                    <Link href='https://web-portfolio-indol-five.vercel.app/' 
+                    className='text-2xl font-extrabold text-customYellow cursor-pointer'>
                         JKCA
-                    </span>
+                    </Link>
                 </div>
 
                 <div id='menu-container'
-                className='w-2/4 hidden md:block'>
-                    <ul className='flex items-center justify-end md:space-x-4 lg:space-x-7'>
+                className='w-1/2 hidden md:block'>
+                    <nav>
+                        <ul className='flex items-center justify-end md:space-x-4 lg:space-x-7'>
+                            <Link href='#home'>
+                                <li className={`
+                                ${activeHero ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                                border-b-2  px-3 py-1 cursor-pointer font-semibold 
+                                hover:border-customYellow
+                                hover:text-customYellow
+                                duration-300`}>
+                                    Home
+                                </li>
+                            </Link>
 
-                        <Link href='#home'>
-                            <li className={`
-                            ${activeHero ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
-                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
-                            hover:border-customYellow
-                            hover:text-customYellow
-                            duration-300`}>
-                                Home
-                            </li>
-                        </Link>
+                            <Link href='#about'>
+                                <li className={`
+                                ${activeAbout ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                                border-b-2  px-3 py-1 cursor-pointer font-semibold 
+                                hover:border-customYellow
+                                hover:text-customYellow
+                                duration-300`}>
+                                    About
+                                </li>
+                            </Link>
 
-                        <Link href='#about'>
-                            <li className={`
-                            ${activeAbout ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
-                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
-                            hover:border-customYellow
-                            hover:text-customYellow
-                            duration-300`}>
-                                About
-                            </li>
-                        </Link>
+                            <Link href='#experience'>
+                                <li className={`
+                                ${activeExp ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                                border-b-2  px-3 py-1 cursor-pointer font-semibold 
+                                hover:border-customYellow
+                                hover:text-customYellow
+                                duration-300`}>
+                                    Experience
+                                </li>
+                            </Link>
 
-                        <Link href='#experience'>
-                            <li className={`
-                            ${activeExp ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
-                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
-                            hover:border-customYellow
-                            hover:text-customYellow
-                            duration-300`}>
-                                Experience
-                            </li>
-                        </Link>
+                            <Link href='#projects'>
+                                <li className={`
+                                ${activePrj ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
+                                border-b-2  px-3 py-1 cursor-pointer font-semibold 
+                                hover:border-customYellow
+                                hover:text-customYellow
+                                duration-300`}>
+                                    Projects
+                                </li>
+                            </Link>
 
-                        <Link href='#projects'>
-                            <li className={`
-                            ${activePrj ? 'text-customYellow border-customYellow' : 'text-white border-transparent'}
-                            border-b-2  px-3 py-1 cursor-pointer font-semibold 
-                            hover:border-customYellow
-                            hover:text-customYellow
-                            duration-300`}>
-                                Projects
-                            </li>
-                        </Link>
-                        
-                    </ul>
+                            <Link href="tel:+639285747667">
+                                <li>
+                                    <button className="bg-customYellow uppercase text-secondaryColor
+                                    px-4 py-3 rounded-lg text-xs font-semibold outline-none">
+                                        Contact Me
+                                    </button>
+                                </li>
+                            </Link>
+                            
+                        </ul>
+                    </nav>
                 </div>
 
                 <div id='burger-container'
