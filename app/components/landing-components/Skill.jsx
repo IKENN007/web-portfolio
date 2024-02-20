@@ -118,7 +118,7 @@ const Skill = () => {
                 <div className="mt-4 flex justify-center w-full">
                     <a target='blank' href='./cv/Jon-Kenneth-Alderite-CV.pdf' 
                     className="bg-customYellow uppercase text-secondaryColor px-6 py-4 
-                    rounded-2xl text-xs font-semibold mb-4 outline-none">
+                    rounded-lg text-xs font-semibold mb-4 outline-none">
                     Download CV
                     </a>
                 </div>

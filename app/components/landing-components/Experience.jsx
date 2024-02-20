@@ -79,7 +79,7 @@ const Experience = () => {
 
                         <button onClick={clickReadMA}
                         className="border border-customYellow uppercase text-customYellow
-                        px-6 py-4 rounded-2xl text-xs font-semibold outline-none hover:text-darkColor
+                        px-6 py-4 rounded-lg text-xs font-semibold outline-none hover:text-darkColor
                         hover:bg-customYellow duration-300">
                             {readMA ? 'Read Less' : 'Read More'}
                         </button>
@@ -119,7 +119,7 @@ const Experience = () => {
 
                         <button onClick={clickReadGC} 
                         className="border border-customYellow uppercase text-customYellow
-                        px-6 py-4 rounded-2xl text-xs font-semibold outline-none hover:text-darkColor
+                        px-6 py-4 rounded-lg text-xs font-semibold outline-none hover:text-darkColor
                         hover:bg-customYellow duration-300">
                             {readGC ? 'Read Less' : 'Read More'}
                         </button>
