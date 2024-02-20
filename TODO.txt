@@ -4,6 +4,14 @@ TODO 3: Animation in skills progress bar.
 TODO 4: Appearance animation in each section or elements.
 TODO 5: Portfolio project modal image and modal details.
 TODO 6: Nav mobile behavior.
+TODO 7: About Page | Experience Page | Project Page | Contact Page
+TODO 8: Services Page
+
+
+! DYNAMIC DATA
+* TECHNICAL SKILLS / PROGRAMMING LANGUAGES
+* PROJECTS IMAGES AND DETAILS
+* WORK EXPERIENCE / CALCULATE HOW MANY YEARS
 
 
 
