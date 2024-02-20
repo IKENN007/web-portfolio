@@ -20,62 +20,25 @@ const Footer = () => {
         <div id='footer' className='px-7 py-28 text-white md:px-20'>
             <div className='md:flex mb-12 md:space-x-10'>
 
-                <div className='md:w-1/3 lg:w-1/4'>
+                <div className='md:w-1/3'>
                     <div className='mb-6'>
-                        <h2 className='mb-10 text-2xl font-semibold'>
+                        {/* <h2 className='mb-10 text-2xl font-semibold'>
                             About
+                        </h2> */}
+
+                        <h2 className="mb-10 text-2xl font-extrabold text-customYellow 
+                        cursor-pointer">
+                            <Link href='https://web-portfolio-indol-five.vercel.app/'>
+                                JKCA
+                            </Link>
                         </h2>
 
                         <p className='font-normal text-base'>
                         I am an enthusiastic web developer living in General Trias, Cavite, with 
                         3 years of experience in web application, front-end development, and REST API.
                         </p>
-                    </div>
-                </div>
 
-                <div className='w-1/4 hidden lg:block'>
-                    <div className='mb-6 ms-6'>
-                        {/* <h2 className='mb-10 text-2xl font-semibold'>
-                            Links
-                        </h2>
-
-                        <ul>
-                            <Link href='#hero-section'>
-                                <li className="flex mb-3">
-                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
-                                    <span className="w-5/6">Home</span>
-                                </li>
-                            </Link>
-                            <Link href='#about-section'>
-                                <li className="flex mb-3">
-                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
-                                    <span className="w-5/6">About</span>
-                                </li>
-                            </Link>
-                            <Link href='#portfolio-section'>
-                                <li className="flex mb-3">
-                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
-                                    <span className="w-5/6">Portfolio</span>
-                                </li>
-                            </Link>
-                            <Link href='#portfolio-section'>
-                                <li className="flex mb-3">
-                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
-                                    <span className="w-5/6">Contact</span>
-                                </li>
-                            </Link>
-                            
-                        </ul> */}
-                    </div>
-                </div>
-
-                <div className='md:w-1/3 lg:w-1/4'>
-                    <div className='mb-6 md:ms-6'>
-                        <h2 className='mb-10 text-2xl font-semibold'>
-                            Social
-                        </h2>
-
-                        <ul className="flex space-x-6">
+                        <ul className="flex space-x-4 mt-10">
                             <li className="mb-3">
                                 <a target="blank" 
                                 href="https://www.linkedin.com/in/jon-kenneth-alderite-27a65a198" 
@@ -86,20 +49,46 @@ const Footer = () => {
                                 href="https://github.com/IKENN007" 
                                 className="text-3xl"><FaSquareGithub /></a>
                             </li>
-                            {/* <li className="mb-3">
-                                <a target="blank" 
-                                href="https://www.linkedin.com/in/jon-kenneth-alderite-27a65a198" 
-                                className="text-3xl"><FaSquareInstagram /></a>
-                            </li> */}
-                            {/* <li className="mb-3">
-                                <a target="blank" href="https://kennethalderite.jobs180.com/" 
-                                className="text-3xl"><FaSuitcase /></a>
-                            </li> */}
                         </ul>
                     </div>
                 </div>
 
-                <div className='md:w-1/3 lg:w-1/4'>
+                <div className='md:w-1/3'>
+                    <div className='mb-6 md:ms-6'>
+                        <h2 className='mb-10 text-2xl font-semibold'>
+                            Links
+                        </h2>
+
+                        <ul>
+                            <Link href='#home'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">Home</span>
+                                </li>
+                            </Link>
+                            <Link href='#about'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">About</span>
+                                </li>
+                            </Link>
+                            <Link href='#experience'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">Experience</span>
+                                </li>
+                            </Link>
+                            <Link href='#projects'>
+                                <li className="flex mb-3">
+                                    <span className="w-1/6 text-lg flex items-center"><FaArrowRightLong /></span>
+                                    <span className="w-5/6">Projects</span>
+                                </li>
+                            </Link>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='md:w-1/3'>
                     <div className='mb-6 md:ms-6'>
                         <h2 className='mb-10 text-2xl font-semibold'>
                             Contact
