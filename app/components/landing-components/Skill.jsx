@@ -73,7 +73,7 @@ const Skill = () => {
                         <div className="w-full flex flex-row flex-wrap md:px-5">
 
                             {progLanguages.map((language) => (
-                                <div key={language.skillName} className="mb-7 w-1/3 px-4">
+                                <div key={language.skillName} className="mb-7 w-full md:w-1/2 lg:w-1/3 px-4">
                                 {/* // ? SKILL NAME */}
                                     <div className="flex justify-between mb-1">
                                         <span className="text-xl font-medium">{language.skillName}</span>
