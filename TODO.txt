@@ -7,6 +7,7 @@ TODO 6: Nav mobile behavior.
 TODO 7: About Page | Experience Page | Project Page | Contact Page
 TODO 8: Services Page
 TODO 9: Remove arrow in footer links
+TODO 10: Apply a mappings in Experience / Achievements, Skills, Projects / Project Image
 
 
 ! DYNAMIC DATA
