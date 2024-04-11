@@ -6,6 +6,7 @@ TODO 5: Portfolio project modal image and modal details.
 TODO 6: Nav mobile behavior.
 TODO 7: About Page | Experience Page | Project Page | Contact Page
 TODO 8: Services Page
+TODO 9: Remove arrow in footer links
 
 
 ! DYNAMIC DATA
