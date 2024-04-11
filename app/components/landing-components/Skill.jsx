@@ -1,4 +1,61 @@
+const progLanguages = [
+    {
+        skillName: 'HTML5',
+        skillLevel: '100%'
+    },
+    {
+        skillName: 'Javascript',
+        skillLevel: '85%'
+    },
+    {
+        skillName: 'JQuery',
+        skillLevel: '85%'
+    },
+    {
+        skillName: 'Node JS',
+        skillLevel: '70%'
+    },
+    {
+        skillName: 'React JS',
+        skillLevel: '75%'
+    },
+    {
+        skillName: 'Next JS',
+        skillLevel: '90%'
+    },
+    {
+        skillName: 'CSS',
+        skillLevel: '90%'
+    },
+    {
+        skillName: 'Bootstrap',
+        skillLevel: '85%'
+    },
+    {
+        skillName: 'Tailwind',
+        skillLevel: '90%'
+    },
+    {
+        skillName: 'PHP',
+        skillLevel: '70%'
+    },
+    {
+        skillName: 'Laravel',
+        skillLevel: '65%'
+    },
+    {
+        skillName: 'Python',
+        skillLevel: '55%'
+    },
+    {
+        skillName: 'Microsoft SQL Server',
+        skillLevel: '75%'
+    },
+]
+
 const Skill = () => {
+    console.log(progLanguages)
+
     return (
         <div className="bg-slate-900">
             {/* bg-slate-400 backdrop-blur-sm bg-opacity-10 */}
@@ -11,106 +68,25 @@ const Skill = () => {
                 <div className="lg:px-12">
                     <div className="md:flex">
 
-                        {/* // ? SKILLS COLUMN 1 */}
-                        <div className="md:w-1/2 md:px-5">
-                            <div className=" mb-7">
-                            {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">HTML5</span>
-                                    <span className="text-xl font-base">100%</span>
-                                </div>
-                            {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full transition-all duration-500 animateSkill-1"></div>
-                                </div>
-                            </div>
+                        {/* // ? SKILLS */}
+                        {/* className="md:w-1/2 md:px-5" */}
+                        <div className="w-full flex flex-row flex-wrap md:px-5">
 
-                            <div className=" mb-7">
+                            {progLanguages.map((language) => (
+                                <div key={language.skillName} className="mb-7 w-1/3 px-4">
                                 {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">CSS</span>
-                                    <span className="text-xl font-base">90%</span>
-                                </div>
-                                {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-2"></div>
-                                </div>
-                            </div>
+                                    <div className="flex justify-between mb-1">
+                                        <span className="text-xl font-medium">{language.skillName}</span>
+                                        <span className="text-xl font-base">{language.skillLevel}</span>
+                                    </div>
 
-                            <div className=" mb-7">
-                                {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">Javascript</span>
-                                    <span className="text-xl font-base">85%</span>
-                                </div>
                                 {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-3"></div>
+                                    <div className="w-full bg-secondaryColor rounded-full h-2.5">
+                                        <div className="bg-customYellow h-2.5 rounded-full transition-all duration-500" 
+                                        style={{width: language.skillLevel}}></div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className=" mb-7">
-                                {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">JQuery</span>
-                                    <span className="text-xl font-base">85%</span>
-                                </div>
-                                {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-4"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* // ? SKILLS COLUMN 2 */}
-                        <div className="md:w-1/2 md:px-5">
-                            <div className=" mb-7">
-                                {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">NEXT.js</span>
-                                    <span className="text-xl font-base">90%</span>
-                                </div>
-                                {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-5"></div>
-                                </div>
-                            </div>
-
-                            <div className=" mb-7">
-                                {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">Tailwind</span>
-                                    <span className="text-xl font-base">70%</span>
-                                </div>
-                                {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-6"></div>
-                                </div>
-                            </div>
-
-                            <div className=" mb-7">
-                                {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">PHP</span>
-                                    <span className="text-xl font-base">80%</span>
-                                </div>
-                                {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-7"></div>
-                                </div>
-                            </div>
-
-                            <div className=" mb-7">
-                                {/* // ? SKILL NAME */}
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-xl font-medium">Microsoft SQL Server</span>
-                                    <span className="text-xl font-base">75%</span>
-                                </div>
-                                {/* // ? SKILL BAR */}
-                                <div className="w-full bg-secondaryColor rounded-full h-2.5">
-                                    <div className="bg-customYellow h-2.5 rounded-full animateSkill-8"></div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
