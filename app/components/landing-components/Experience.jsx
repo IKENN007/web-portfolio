@@ -2,6 +2,52 @@
 
 import { useState } from "react"
 
+const workExperience = [
+    {
+        workFromMonth: 'Jan',
+        workFromYear: '2022',
+        workUptoMonth: 'Current',
+        workUptoYear: 'Current',
+        position: 'Web Application Developer',
+        company: 'M.A. TECHNOLOGY, INC.',
+        summary: `I specialize in the creation of in-house web applications and dashboards, 
+        which are utilized by various departments to digitize their existing procedures. 
+        This not only reduces reliance on Excel for record-keeping and reporting but also 
+        facilitates a more seamless and efficient workflow for end-users.`,
+        responsibility: [
+            {
+                res: `Engaged in cross-departmental collaboration with developers to successfully integrate desired
+                functionalities and design into a user-centric web application.`
+            },
+            {
+                res: `Utilized HTML, CSS, JavaScript, JQuery, Next.js, React.js, Bootstrap, and Tailwind to construct
+                the front-end of the website.`
+            },
+            {
+                res: `Leveraged PHP Laravel and Python Flask frameworks to architect the backend infrastructure of
+                the web application.`
+            },
+            {
+                res: `Applied responsive design principles to ensure the web applications are optimized for viewing
+                across a spectrum of devices, from desktop computers to mobile handhelds.`
+            },
+            {
+                res: `Enhanced the efficiency and user experience of web applications by optimizing performance to
+                ensure rapid loading times.`
+            },
+        ],
+        achievements: [
+            {
+                ach: `Successfully launched the web app on schedule.`
+            },
+            {
+                ach: `Received accolades from both end-users and the company's executive leadership for the web
+                application's functionality, aesthetic appeal, and user-friendly interface.`
+            },
+        ]
+    }
+]
+
 const Experience = () => {
     const [readMA, setReadMA] = useState (false)
     const [readGC, setReadGC] = useState (false)
@@ -12,6 +58,9 @@ const Experience = () => {
     const clickReadGC = () => {
         setReadGC(!readGC)
     }
+
+    console.log(workExperience)
+    console.log(workExperience[0].responsibility)
 
     return (
         <div className="px-7 pt-28 bg-slate-900 text-white md:px-20">
