@@ -1,13 +1,12 @@
-'use client'
-
-import { useState } from "react"
-
 const workExperience = [
     {
-        workFromMonth: 'Jan',
-        workFromYear: '2022',
-        workUptoMonth: 'Current',
-        workUptoYear: 'Current',
+        workId: 0,
+        workFromMonth: 0,
+        workFromMonthName: 'Jan',
+        workFromYear: 2022,
+        workUptoMonth: 'Present',
+        workUptoMonthName: 'Present',
+        workUptoYear: 'Present',
         position: 'Web Application Developer',
         company: 'M.A. TECHNOLOGY, INC.',
         summary: `I specialize in the creation of in-house web applications and dashboards, 
@@ -44,23 +43,75 @@ const workExperience = [
                 ach: `Received accolades from both end-users and the company's executive leadership for the web
                 application's functionality, aesthetic appeal, and user-friendly interface.`
             },
+            {
+                ach: `Successfully systematize the purchasing department process from using papers and Excel to a
+                fully functioning web application (e-commerce type) that boosts work efficiency and process
+                speed and starts paperless transactions in less than 1 year, resulting in a successful external audit.`
+            },
+            {
+                ach: `Systematize the old process of warehouse receiving of delivered materials from different
+                international suppliers up to stocking in inventory, resulting in more accurate data and increasing
+                material distribution in production.`
+            },
+            {
+                ach: `Received a 100% salary increase in less than 1 year from the start of my employment based on
+                my performance, technical skills, leadership, and decision-making.`
+            },
+        ]
+    },
+    {
+        workId: 1,
+        workFromMonth: 5,
+        workFromMonthName: 'Jun',
+        workFromYear: 2021,
+        workUptoMonth: 11,
+        workUptoMonthName: 'Dec',
+        workUptoYear: 2021,
+        position: 'Website / Wordpress Developer',
+        company: 'GoCrayons Digital Inc.',
+        summary: `Managed the development and maintenance of WordPress websites, ensuring alignment with client
+        specifications and the integration of aesthetic design with functional capabilities.`,
+        responsibility: [
+            {
+                res: `Customized and extended WordPress themes and plugins to meet clients' 
+                specifications.`
+            },
+            {
+                res: `Implemented responsive design techniques to optimize websites for various 
+                devices and screen sizes, enhancing the user experience and accessibility.`
+            },
+            {
+                res: `Provided ongoing support and maintenance for WordPress websites, addressing 
+                client requests, performing updates, and ensuring the security and 
+                functionality of the sites.`
+            },
         ]
     }
 ]
 
 const Experience = () => {
-    const [readMA, setReadMA] = useState (false)
-    const [readGC, setReadGC] = useState (false)
 
-    const clickReadMA = () => {
-        setReadMA(!readMA)
-    }
-    const clickReadGC = () => {
-        setReadGC(!readGC)
-    }
+    const calculateWorkDuration = (fromMonth, fromYear, uptoMonth, uptoYear) => {
+        let totalWorkYears , totalWorkMonths
+        const currentDate = new Date()
+        const currentMonth = currentDate.getMonth()
+        const currentYear = currentDate.getFullYear()
 
-    console.log(workExperience)
-    console.log(workExperience[0].responsibility)
+        if(uptoYear == 'Present') {
+            totalWorkYears = currentYear - fromYear
+            totalWorkMonths = currentMonth - fromMonth
+        } else {
+            totalWorkYears = uptoYear - fromYear
+            totalWorkMonths = uptoMonth - fromMonth
+        }
+
+        if(totalWorkMonths < 0) {
+            totalWorkYears--;
+            totalWorkMonths += 12;
+        }
+
+        return(totalWorkYears + " Year(s) and " + totalWorkMonths + " month(s)")
+    }
 
     return (
         <div className="px-7 pt-28 bg-slate-900 text-white md:px-20">
@@ -70,113 +121,62 @@ const Experience = () => {
                 className="text-4xl md:text-5xl font-bold mb-6 text-center">Related Experience</h2>
             </div>
 
-            <div className="lg:flex lg:space-x-2">
+            <div className="lg:flex lg:flex-row lg:flex-wrap">
 
-                <div className="lg:w-1/2 lg:px-4">
-                    <div className="rounded-lg mb-7 p-7 bg-secondaryColor">
-                        <span className=" font-black text-2xl text-customYellow">Jan 2022 - Present</span>
-                        <h2 className="text-2xl py-3">Web Application Developer</h2>
-                        <span className=" text-xs font-semibold uppercase">M.A. TECHNOLOGY, INC.</span>
+                {workExperience.map((workExp) => (
+                    <div key={workExp.workId} className="w-full lg:w-1/2 lg:px-4">
+                        <div className="rounded-lg mb-7 p-7 bg-secondaryColor">
+                            <span className="font-black text-2xl text-customYellow">
+                                {workExp.workUptoYear == 'Present' 
+                                    ? workExp.workFromMonthName + " " + workExp.workFromYear + " - " + workExp.workUptoYear
+                                    : workExp.workFromMonthName + " " + workExp.workFromYear + " - " + workExp.workUptoMonthName + " " + workExp.workUptoYear
+                                }
+                            </span>
+                            {/* // ? CALCULATE DURATION */}
+                            <p className="text-xs">{
+                                calculateWorkDuration(
+                                    workExp.workFromMonth, 
+                                    workExp.workFromYear, 
+                                    workExp.workUptoMonth, 
+                                    workExp.workUptoYear)}
+                            </p>
+                            <h2 className="text-2xl py-3">{workExp.position}</h2>
+                            <span className=" text-xs font-semibold uppercase">{workExp.company}</span>
 
-                        <p className=" mt-6 mb-6 text-base">
-                            I specialize in the creation of in-house web applications and dashboards, which are utilized by
-                            various departments to digitize their existing procedures. This not only reduces reliance on Excel for
-                            record-keeping and reporting but also facilitates a more seamless and efficient workflow for
-                            end-users.
-                        </p>
+                            <p className=" mt-6 mb-6 text-base">
+                                {workExp.summary}
+                            </p>
 
-                        <div className={`${readMA ? '' : 'hidden'}
-                        mb-6`}>
-                            <h2 className="mb-2">Key Responsibilities: </h2>
-                            <ul className="list-disc">
-                                <li className="ms-4 text-base">
-                                    Engaged in cross-departmental collaboration with developers to successfully integrate desired
-                                    functionalities and design into a user-centric web application.
-                                </li>
-                                <li className="ms-4 text-base">
-                                    Utilized HTML, CSS, JavaScript, JQuery, Next.js, React.js, Bootstrap, and Tailwind to construct
-                                    the front-end of the website.
-                                </li>
-                                <li className="ms-4 text-base">
-                                    Leveraged PHP Laravel and Python Flask frameworks to architect the backend infrastructure of
-                                    the web application.
-                                </li>
-                                <li className="ms-4 text-base">
-                                    Applied responsive design principles to ensure the web applications are optimized for viewing
-                                    across a spectrum of devices, from desktop computers to mobile handhelds.
-                                </li>
-                                <li className="ms-4 text-base">
-                                    Enhanced the efficiency and user experience of web applications by optimizing performance to
-                                    ensure rapid loading times.
-                                </li>
-                            </ul>
+                            {workExp.responsibility &&
+                                <div className="mb-6">
+                                    <h2 className="mb-2">Key Responsibilities:</h2>
+                                    <ul className="list-disc">
+                                        {workExp.responsibility.map((mapRes) => (
+                                            <li key={mapRes.res} className="ms-4 text-base">
+                                                {mapRes.res}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            }
+
+                            {workExp.achievements && 
+                                <div className="mb-6">
+                                    <h2 className="mb-2">Achievements:</h2>
+                                    <ul className="list-disc">
+                                        {workExp.achievements.map((mapAch) => (
+                                            <li key={mapAch.ach} className="ms-4 text-base">
+                                                {mapAch.ach}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            }
+                            
                         </div>
-
-                        <div className={`${readMA ? '' : 'hidden'}
-                        mb-6`}>
-                            <h2 className="mb-2">Achievements: </h2>
-                                <ul className="list-disc">
-                                <li className="ms-4 text-base">
-                                    Successfully launched the web app on schedule.
-                                </li>
-                                <li className="ms-4 text-base">
-                                    Received accolades from both end-users and the company's executive leadership for the web
-                                    application's functionality, aesthetic appeal, and user-friendly interface.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <button onClick={clickReadMA}
-                        className="border border-customYellow uppercase text-customYellow
-                        px-6 py-4 rounded-lg text-xs font-semibold outline-none hover:text-darkColor
-                        hover:bg-customYellow duration-300">
-                            {readMA ? 'Read Less' : 'Read More'}
-                        </button>
                     </div>
-                </div>
-                
-                <div className="lg:w-1/2 lg:px-4">
-                    <div className="rounded-lg p-7 bg-secondaryColor">
-                        <span className=" font-black text-2xl text-customYellow">Jun 2021 - Dec 2021</span>
-                        <h2 className="text-2xl py-3">Website / Wordpress Developer</h2>
-                        <span className=" text-xs font-semibold uppercase">GoCrayons Digital Inc.</span>
-
-                        <p className=" mt-6 mb-6">
-                            Managed the development and maintenance of WordPress websites, ensuring alignment with client
-                            specifications and the integration of aesthetic design with functional capabilities.
-                        </p>
-
-                        <div className={`${readGC ? '' : 'hidden'}
-                        mb-6`}>
-                            <h2 className="mb-2">Key Responsibilities: </h2>
-                            <ul className="list-disc">
-                                <li className="ms-4 text-base">
-                                    Customized and extended WordPress themes and plugins to meet clients' 
-                                    specifications.
-                                </li>
-                                <li className="ms-4 text-base">
-                                    Implemented responsive design techniques to optimize websites for various 
-                                    devices and screen sizes, enhancing the user experience and accessibility.
-                                </li>
-                                <li className="ms-4 text-base">
-                                    Provided ongoing support and maintenance for WordPress websites, addressing 
-                                    client requests, performing updates, and ensuring the security and 
-                                    functionality of the sites.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <button onClick={clickReadGC} 
-                        className="border border-customYellow uppercase text-customYellow
-                        px-6 py-4 rounded-lg text-xs font-semibold outline-none hover:text-darkColor
-                        hover:bg-customYellow duration-300">
-                            {readGC ? 'Read Less' : 'Read More'}
-                        </button>
-                    </div>
-                </div>
-
+                ))}
             </div>
-
         </div>
     )
 }

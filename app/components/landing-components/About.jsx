@@ -52,7 +52,7 @@ const About = () => {
                                 </li>
                                 <li className="lg:flex mb-3">
                                     <span className="w-1/4 font-semibold text-base me-2">Email: </span>
-                                    <a href='mailto:Jonkennethcayetano@gmail.com' className="w-3/4 text-base">Jonkennethcayetano@gmail.com</a>
+                                    <a href='mailto:Jonkennethcayetanoalderite@gmail.com' className="w-3/4 text-base">Jonkennethcayetano@gmail.com</a>
                                 </li>
                             </ul>
                         </div>

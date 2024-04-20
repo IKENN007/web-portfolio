@@ -54,7 +54,7 @@ const progLanguages = [
 ]
 
 const Skill = () => {
-    console.log(progLanguages)
+    // console.log(progLanguages)
 
     return (
         <div className="bg-slate-900">
