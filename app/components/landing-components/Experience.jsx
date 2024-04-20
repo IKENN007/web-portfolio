@@ -53,10 +53,10 @@ const workExperience = [
                 international suppliers up to stocking in inventory, resulting in more accurate data and increasing
                 material distribution in production.`
             },
-            {
-                ach: `Received a 100% salary increase in less than 1 year from the start of my employment based on
-                my performance, technical skills, leadership, and decision-making.`
-            },
+            // {
+            //     ach: `Received a 100% salary increase in less than 1 year from the start of my employment based on
+            //     my performance, technical skills, leadership, and decision-making.`
+            // },
         ]
     },
     {
