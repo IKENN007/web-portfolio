@@ -127,6 +127,9 @@ const Portfolio = () => {
             case 'Microsoft SQL Server':
                 progLangIcon = <SiMicrosoftsqlserver fontSize={16} fill="#FFBD39" />;
                 break;
+            case 'Bootstrap':
+                progLangIcon = <FaBootstrap fontSize={16} fill="#FFBD39" />;
+                break;
         }
 
         return progLangIcon;
