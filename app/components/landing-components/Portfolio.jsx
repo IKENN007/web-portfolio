@@ -147,11 +147,11 @@ const Portfolio = () => {
                     {/* shadow-xl w-3/4 */}
 
                     {systemProjects.map((proj) => (
-                        <div key={proj.id} className="bg-base-100 w-5/6 rounded-lg bg-secondaryColor grid grid-cols-12">
+                        <div key={proj.id} className="bg-base-100 w-full lg:w-5/6 rounded-lg bg-secondaryColor grid grid-cols-12">
                             <div className="col-span-7 rounded-s-lg">
                                 <Image src={`${proj.imageSrc}`}
                                     loading="lazy" 
-                                    alt="project-1"
+                                    alt={proj.Name}
                                     width={1000}
                                     height={1000}
                                     className="rounded-s-lg w-full h-auto"
@@ -161,7 +161,7 @@ const Portfolio = () => {
                             <div className="col-span-5 p-7 relative flex flex-col justify-between">
                                 <div>
                                     <div className="mb-3">
-                                        <span className="font-black text-2xl text-customYellow">
+                                        <span className="font-black text-3xl text-customYellow">
                                             {proj.Name}
                                         </span>
                                         <p className="text-base">
@@ -173,7 +173,6 @@ const Portfolio = () => {
                                         {proj.ProgLanguages.map((progLang) => (
                                             <div key={progLang.pl} 
                                                 className="px-2 py-1 rounded-lg ring-1 ring-customYellow w-fit flex items-center gap-1">
-                                                {/* <FaHtml5 fontSize={16} fill="#FFBD39" /> */}
                                                 {getProgLangIcon(progLang.pl)}
                                                 <span className="text-xs text-customYellow">
                                                     {progLang.pl}
