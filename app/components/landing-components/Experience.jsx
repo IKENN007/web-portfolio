@@ -15,49 +15,28 @@ const workExperience = [
         facilitates a more seamless and efficient workflow for end-users.`,
         responsibility: [
             {
-                res: `Engaged in cross-departmental collaboration with developers to successfully integrate desired
-                functionalities and design into a user-centric web application.`
+                res: `Developed an e-commerce-type web application for the purchasing department to replace the old
+                process of using Excel, transition to paperless transactions, and optimize the workflow, resulting in
+                a 100% successful external audit in the purchasing department.`
             },
             {
-                res: `Utilized HTML, CSS, JavaScript, JQuery, Next.js, React.js, Bootstrap, and Tailwind to construct
-                the front-end of the website.`
+                res: `Programmed a web app with a report-generating feature for the warehouse department and
+                inventory to record and keep track of all the delivered materials from different suppliers.`
             },
             {
-                res: `Leveraged PHP Laravel and Python Flask frameworks to architect the backend infrastructure of
-                the web application.`
+                res: `Built a web application dashboard with a maintenance scheduling feature for the facilities
+                department to maximize the existing Android app they use to record all the readings in their
+                machines and the power and water consumption of the company.`
             },
             {
-                res: `Applied responsive design principles to ensure the web applications are optimized for viewing
-                across a spectrum of devices, from desktop computers to mobile handhelds.`
+                res: `Solved the issue regarding the slow fetching of data from the database backend to the client-side
+                by presenting the server-side pagination using PHP Laravel.`
             },
             {
-                res: `Enhanced the efficiency and user experience of web applications by optimizing performance to
-                ensure rapid loading times.`
+                res: `I designed and planned the structure of databases and tables using Microsoft SQL Server for all of
+                my developed web applications.`
             },
         ],
-        achievements: [
-            {
-                ach: `Successfully launched the web app on schedule.`
-            },
-            {
-                ach: `Received accolades from both end-users and the company's executive leadership for the web
-                application's functionality, aesthetic appeal, and user-friendly interface.`
-            },
-            {
-                ach: `Successfully systematize the purchasing department process from using papers and Excel to a
-                fully functioning web application (e-commerce type) that boosts work efficiency and process
-                speed and starts paperless transactions in less than 1 year, resulting in a successful external audit.`
-            },
-            {
-                ach: `Systematize the old process of warehouse receiving of delivered materials from different
-                international suppliers up to stocking in inventory, resulting in more accurate data and increasing
-                material distribution in production.`
-            },
-            // {
-            //     ach: `Received a 100% salary increase in less than 1 year from the start of my employment based on
-            //     my performance, technical skills, leadership, and decision-making.`
-            // },
-        ]
     },
     {
         workId: 1,
@@ -73,17 +52,20 @@ const workExperience = [
         specifications and the integration of aesthetic design with functional capabilities.`,
         responsibility: [
             {
-                res: `Customized and extended WordPress themes and plugins to meet clients' 
-                specifications.`
+                res: `Programmed a Python script to be used by our SEO team that scans all the sitemaps of a
+                WordPress website to detect any malicious URLs with a Japanese keyword hack.`
             },
             {
-                res: `Implemented responsive design techniques to optimize websites for various 
-                devices and screen sizes, enhancing the user experience and accessibility.`
+                res: `Built a WordPress e-commerce site with Woocommerce (an open-source e-commerce platform)
+                for one of our international clients.`
             },
             {
-                res: `Provided ongoing support and maintenance for WordPress websites, addressing 
-                client requests, performing updates, and ensuring the security and 
-                functionality of the sites.`
+                res: `I maintained all existing WordPress websites that are under our team to ensure security and
+                performance, updated the plugins, and removed plugins that were not supported at all.`
+            },
+            {
+                res: `Built a lot of WordPress websites and blog posts for different international clients and deployed
+                them to different hosting services like GoDaddy and SiteGround.`
             },
         ]
     }
@@ -149,7 +131,7 @@ const Experience = () => {
 
                             {workExp.responsibility &&
                                 <div className="mb-6">
-                                    <h2 className="mb-2">Key Responsibilities:</h2>
+                                    <h2 className="mb-2 hidden">Key Responsibilities:</h2>
                                     <ul className="list-disc">
                                         {workExp.responsibility.map((mapRes) => (
                                             <li key={mapRes.res} className="ms-4 text-base">
