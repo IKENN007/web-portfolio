@@ -52,13 +52,13 @@ const About = () => {
                                 </li>
                                 <li className="lg:flex mb-3">
                                     <span className="w-1/4 font-semibold text-base me-2">Email: </span>
-                                    <a href='mailto:Jonkennethcayetanoalderite@gmail.com' className="w-3/4 text-base">Jonkennethcayetanoalderite@gmail.com</a>
+                                    <a href='mailto:Jonkennethcayetanoalderite@gmail.com' className="w-3/4 text-base">Jonkennethcayetanoalderite</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="mt-4">
-                            <a target='blank' href='./cv/Jon-Kenneth-Alderite-Resume.pdf' 
+                            <a target='blank' href='./cv/Jon Kenneth Alderite - Resume - 2024.pdf' 
                             className="bg-customYellow uppercase text-secondaryColor px-6 py-4 
                             rounded-lg text-xs font-semibold mb-4 outline-none">
                             Download CV

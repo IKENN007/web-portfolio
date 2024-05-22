@@ -151,20 +151,22 @@ const Portfolio = () => {
 
                     {systemProjects.map((proj) => (
                         <div key={proj.id} className="bg-base-100 w-full lg:w-5/6 rounded-lg bg-secondaryColor grid grid-cols-12">
-                            <div className="col-span-7 rounded-s-lg">
+                            <div className="col-span-12 md:col-span-7 md:rounded-s-lg">
                                 <Image src={`${proj.imageSrc}`}
                                     loading="lazy" 
                                     alt={proj.Name}
                                     width={1000}
                                     height={1000}
-                                    className="rounded-s-lg w-full h-auto"
+                                    className="rounded-t-lg md:rounded-s-lg md:rounded-e-none w-full h-auto"
                                 />
                             </div>
 
-                            <div className="col-span-5 p-7 relative flex flex-col justify-between">
+                            <div className="col-span-12 md:col-span-5 p-7 relative flex flex-col justify-between">
                                 <div>
                                     <div className="mb-3">
-                                        <span className="font-black text-3xl text-customYellow">
+                                        <span className="text-customYellow 
+                                            font-bold md:font-black 
+                                            text-2xl md:text-3xl ">
                                             {proj.Name}
                                         </span>
                                         <p className="text-base">
@@ -186,7 +188,7 @@ const Portfolio = () => {
                                 </div>
 
                                 <div className="flex justify-end">
-                                    <button className="bg-customYellow uppercase text-secondaryColor px-6 py-4 rounded-lg text-xs font-semibold outline-none">View</button>
+                                    {/* <button className="bg-customYellow uppercase text-secondaryColor px-6 py-4 rounded-lg text-xs font-semibold outline-none">View</button> */}
                                 </div>
                             </div>
                         </div>
