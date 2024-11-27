@@ -14,7 +14,6 @@ const Topnav = () => {
     const [activeAbout, setActiveAbout] = useState(false)
     const [activeExp, setActiveExp] = useState(false)
     const [activePrj, setActivePrj] = useState(false)
-    
 
     useEffect(() => {
         const handleScroll = () => {
