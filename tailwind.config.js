@@ -14,8 +14,10 @@ module.exports = {
         'prog-bg': "url('./images/prog-bg-1.jpg')",
       },
       colors: {
-        primaryColor: '#415A77',
-        secondaryColor: '#1B263B',
+        primaryColor: '#edab24',
+        // primaryColor: '#415A77',
+        secondaryColor: '#132f56',
+        // secondaryColor: '#1B263B',
         darkColor: '#0D1B2A',
         lightColor: '#778DA9',
         customGray: '#E0E1DD',

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import { FaBars, FaX } from "react-icons/fa6";
 
@@ -69,8 +70,8 @@ const Topnav = () => {
                 <div id='logo-container'
                 className='w-1/2'>
                     <Link href='https://web-portfolio-indol-five.vercel.app/' 
-                    className='text-2xl font-extrabold text-customYellow cursor-pointer'>
-                        JKCA
+                    className='cursor-pointer'>
+                        <Image src='/images/KEN LOGO/KEN_LOGO-14.png' alt='' width={3000} height={3000} className="size-14" />
                     </Link>
                 </div>
 
